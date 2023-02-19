@@ -1,0 +1,19 @@
+version: '3'
+services:
+  home:
+    restart: always
+    container_name: alagarbaa-home
+    build:
+      dockerfile: Dockerfile
+      context: .
+    networks:
+      - nginx-proxy
+    environment:
+      - VIRTUAL_PORT=80
+      - VIRTUAL_HOST=youtube-video-thumbnail-downloader.alagarbaa.com
+      - LETSENCRYPT_HOST=youtube-video-thumbnail-downloader.alagarbaa.com
+      - LETSENCRYPT_EMAIL=performautodev@gmail.com
+networks:
+  nginx-proxy:
+    external:
+      name: nginx-proxy

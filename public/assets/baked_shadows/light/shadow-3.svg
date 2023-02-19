@@ -1,0 +1,17 @@
+<!-- The SVG Design by Ala GARBAA - AlaGarbaa.com -->
+<svg width="541" height="993" viewBox="0 0 541 993" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.15" filter="url(#filter0_f_42_1703)">
+<ellipse cx="506.5" cy="496.5" rx="256.5" ry="246.5" fill="url(#45qf4qs4fq4f)"/>
+</g>
+<defs>
+<filter id="filter0_f_42_1703" x="0" y="0" width="1013" height="993" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="125" result="q4sfqs4f8qf8"/>
+</filter>
+<linearGradient id="45qf4qs4fq4f" x1="280.327" y1="743" x2="824.387" y2="665.359" gradientUnits="userSpaceOnUse">
+<stop stop-color="#085B81"/>
+<stop offset="1" stop-color="#117D60"/>
+</linearGradient>
+</defs>
+</svg>

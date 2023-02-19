@@ -1,0 +1,37 @@
+{
+  "name": "youtube-video-thumbnail-downloader",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "dev": "next dev -p 7700",
+    "build": "next build",
+    "start": "next start -p 80",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.1",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@react-icons/all-files": "^4.1.0",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^6",
+    "next": "13.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "sweetalert2": "^11.6.15",
+    "swiper": "^8.4.5",
+    "typescript": "4.9.3",
+    "typewriter-effect": "^2.19.0",
+    "xhr2": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5"
+  }
+}

@@ -1,0 +1,1 @@
+export const defaultURL = "https://www.youtube.com/watch?v=TtCsNuZewiY";

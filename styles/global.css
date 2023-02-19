@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  min-height: 100vh;
+  background: var(--chakra-colors-dark-800);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  letter-spacing: 0;
+  /* transition: 0.2s !important; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--chakra-colors-blue-700);
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+  /* show by default */
+}
+
+body::scrollbar {
+  background-image: initial;
+  background-color: transparent;
+  color: transparent;
+  width: 10px;
+}
+
+body::scrollbar-thumb {
+  border-radius: 30px;
+}
+
+body.chakra-ui-dark::scrollbar-thumb {
+  background: var(--chakra-colors-dark-800);
+}
+
+body.chakra-ui-light::scrollbar-thumb {
+  background: var(--chakra-colors-light-800);
+}
+
+::-webkit-scrollbar {
+  background-image: initial;
+  background-color: transparent;
+  color: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+}
+
+body.chakra-ui-dark::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-dark-800);
+}
+
+body.chakra-ui-light::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-light-800);
+}
+
+.tw_main__wrapper {
+  background: var(--chakra-colors-bg-2);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent;
+}
+
+.tw1_main__wrapper {
+  background: var(--chakra-colors-bg-4);
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  text-fill-color: transparent;
+}
+
+.tw_main__cursor {
+  font-weight: 300;
+}
+
+/****
+*****    Animations 
+*****/
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animationFramesOne {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes hero-thumb-animation {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotateMe {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: scale(1.2) rotate(7deg);
+  }
+  50% {
+    transform: scale(0.8) rotate(-7deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(20px, 0, 0);
+  }
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 -10px var(--chakra-colors-brand-2);
+  }
+  40% {
+    text-shadow: 0 0 20px var(--chakra-colors-brand-2);
+  }
+  60% {
+    text-shadow: 0 0 20px var(--chakra-colors-brand-2);
+  }
+  100% {
+    text-shadow: 0 0 -10px var(--chakra-colors-brand-2);
+  }
+}
+
+.blurry-1 {
+  background: rgba(23, 12, 61, 0.2);
+  position: absolute;
+  backdrop-filter: blur(10px);
+  box-shadow: rgb(255 255 255 / 20%) 0px 0px 0px 0.5px inset;
+  transform: translateX(-10%);
+  z-index: 3;
+}
+
+/****
+***** end animations
+*****/
+
+* {
+  /* user-select: none !important; */
+}
+
+img {
+  /* pointer-events: none !important; */
+}
+
+nextjs-portal {
+  background: #000;
+  user-select: text !important;
+}
+
+
+
+/****
+Swal
+*****/
+
+
+
+
+body.chakra-ui-dark .swal2-container.swal2-center>.swal2-popup {
+  background: var(--chakra-colors-dark-800);
+  color: var(--chakra-colors-light-800);
+}
+
+body.chakra-ui-light .swal2-container.swal2-center>.swal2-popup {
+  background: var(--chakra-colors-light-800);
+  color: var(--chakra-colors-dark-800);
+}
+.swal2-styled.swal2-confirm {
+  background: var(--chakra-colors-brand-1) !important;
+}
